@@ -1,0 +1,51 @@
+html, body {
+  background-color: #f5ffd8;
+}
+
+div {
+  position:absolute;
+  text-align: center;
+  z-index: +1;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: 50px;
+  color: coral;
+ 
+}
+
+.center {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.top {
+  width: 300px;
+  height: 300px;
+  position:absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+}
+
+@keyframes spin{
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+  }
+
+.bottom {
+  width: 500px;
+  height: 500px;
+
+  position:absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  /* animacje można zapisać też tak animation: spin 20s linear infinite */
+}
+
+
+
